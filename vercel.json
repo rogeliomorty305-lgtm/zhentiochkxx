@@ -2,15 +2,11 @@
 "version": 2,
 "functions": {
 "api/**/*.php": {
-"runtime": "vercel-php@0.6.0"
+"runtime": "vercel-php@0.7.3"
 }
 },
 "routes": [
 { "src": "^/$", "dest": "/api/index.php" },
-{ "src": "^/admin$", "dest": "/api/admin.php" },
-{ "src": "^/auth$", "dest": "/api/auth.php" },
-{ "src": "^/key$", "dest": "/api/key.php" },
-{ "src": "^/us$", "dest": "/api/us.php" },
 { "src": "^/(.*)$", "dest": "/api/$1.php" }
 ]
 }
